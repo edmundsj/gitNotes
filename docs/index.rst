@@ -10,6 +10,8 @@ Welcome to Pro Git's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   cute_commands
+
 
 
 Indices and tables
