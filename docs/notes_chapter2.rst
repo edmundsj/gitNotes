@@ -21,6 +21,9 @@ Apparently, you *can* lose information when undoing things - I suspect this is w
 
 Questions and Answers
 ------------------------
+Q: Does un-staging a file using git reset do anything to my local files?
+A: No, only git reset --hard does this.
+
 Q: How do I remove a file from git and my local directory?
 A:
 .. code-block::
