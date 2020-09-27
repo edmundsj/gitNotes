@@ -44,3 +44,9 @@ A:
 
     git rm --cached FILENAME
 
+Q: I made a change to one of my files that I want to undo, and I don't want git to track it. 
+A: The following code destroys any of the changes you made that have not yet been staged for a commit:
+.. code-block::
+
+    git checkout -- <FILENAME>
+
