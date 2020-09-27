@@ -13,8 +13,8 @@ This shows the difference between what is in your staging area and what is in yo
 
 .. code-block::
 
-    git add -a
+    git commit -a
 
-This command adds all previously tracked files. Is it the same as git add -u?
+This command adds all previously tracked files and commits them in the same command. Is it the same as git add -u, followed by a command?
 
 
