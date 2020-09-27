@@ -11,6 +11,7 @@ Welcome to Pro Git's documentation!
    :caption: Contents:
 
    cute_commands
+   notes_chapter2
 
 
 
