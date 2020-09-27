@@ -17,4 +17,17 @@ This shows the difference between what is in your staging area and what is in yo
 
 This command adds all previously tracked files and commits them in the same command. Is it the same as git add -u, followed by a command?
 
+Now for a dangerous command:
 
+.. code-block::
+   
+    git rm FILENAME
+
+This not only removes a file from being tracked in git, but ALSO deletes it in your actual filesystem, too. It doesn't just "un-track" the file. How do I un-track a file? Using that command, but with the --cached flag:
+
+.. code-block::
+
+    git rm --cached FILENAME
+
+
+Then, you can add the file to your .gitignore and everything will be hunky-dory. You can also explicitly rename files with git using the "git mv" command. 

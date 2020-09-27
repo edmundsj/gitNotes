@@ -2,3 +2,4 @@ _build
 _static
 _templates
 *.swp
+new_random_file.py
