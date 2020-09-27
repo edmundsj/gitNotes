@@ -19,6 +19,8 @@ This command adds all previously tracked files and commits them in the same comm
 
 Apparently, you *can* lose information when undoing things - I suspect this is what happened with my RCWA stuff. I need to figure out which 'undos' are permanent and which are not. 
 
+Looks like "git pull" is an alias for fetch, which grabs from a remote repository, and then "git merge", which merges the fetched information with your local stuff. Fetching the remote repository doesn't do anything to your local stuff.
+
 Questions and Answers
 ------------------------
 Q: Does un-staging a file using git reset do anything to my local files?
@@ -50,3 +52,10 @@ A: The following code destroys any of the changes you made that have not yet bee
 
     git checkout -- <FILENAME>
 
+Q: How do I get data from a remote repository without merging it with my local stuff? Where is that located?
+A: 
+.. code-block::
+
+    git fetch origin
+
+Should do this. I'm not sure then how to merge stuff.
