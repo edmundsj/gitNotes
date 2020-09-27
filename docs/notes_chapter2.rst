@@ -17,19 +17,27 @@ This shows the difference between what is in your staging area and what is in yo
 
 This command adds all previously tracked files and commits them in the same command. Is it the same as git add -u, followed by a command?
 
-Now for a dangerous command:
+Apparently, you *can* lose information when undoing things - I suspect this is what happened with my RCWA stuff. I need to figure out which 'undos' are permanent and which are not. 
 
+Questions and Answers
+------------------------
+Q: How do I remove a file from git and my local directory?
+A:
 .. code-block::
-   
-    git rm FILENAME
 
-This not only removes a file from being tracked in git, but ALSO deletes it in your actual filesystem, too. It doesn't just "un-track" the file. How do I un-track a file? Using that command, but with the --cached flag:
+    git rm <FILENAME>
 
+Q: How do I fix a commit I already made?
+A: Do whatever additional stuff you want to do, and then run: 
+.. code-block::
+
+    git commit --amend
+
+This will allow you to "amend" your previous commit (and its message). It's a way to edit commits after the fact.
+
+Q: How do I remove a file from git without removing it from my local directory?
+A: 
 .. code-block::
 
     git rm --cached FILENAME
 
-
-Then, you can add the file to your .gitignore and everything will be hunky-dory. You can also explicitly rename files with git using the "git mv" command. 
-
-Apparently, you *can* lose information when undoing things - I suspect this is what happened with my RCWA stuff. I need to figure out which 'undos' are permanent and which are not. 
