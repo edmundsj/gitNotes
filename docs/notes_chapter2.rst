@@ -31,3 +31,5 @@ This not only removes a file from being tracked in git, but ALSO deletes it in y
 
 
 Then, you can add the file to your .gitignore and everything will be hunky-dory. You can also explicitly rename files with git using the "git mv" command. 
+
+Apparently, you *can* lose information when undoing things - I suspect this is what happened with my RCWA stuff. I need to figure out which 'undos' are permanent and which are not. 
