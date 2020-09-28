@@ -22,6 +22,7 @@ OK, so here's an outline of my desired git workflow:
 1. Setup a git repository. Create a "develop" branch and switch to it.
 2. Setup your build so that every time you commit your core (fast) unit tests are run and your documentation is generated via git hooks.
 3. Setup your build so that every time you push, your entire unit test suite (all integration tests) are run via git hooks.
+
 General workflow notes
 ------------------------
 - NEVER work directly on the master branch. This should be your stable codebase
@@ -30,3 +31,7 @@ General workflow notes
 - Merge the develop branch into the master branch once you have a stable codebase and are content with the changes.
 
 7. Go back to the develop branch, create additional feature branches as needed and continually merge them back into master.
+
+What the hell is rebasing? Why would I ever want to use it instead of merging?
+- Looks like it's a lot cleaner than a merge in the case of when you have one long-lived branch that you are working off of, and then there is some update to that branch and you want to incorporate it.
+- ALso looks like it rewrites history, which from my point of view as an individual developer is not a good idea. I'm going to ignore it for now. 

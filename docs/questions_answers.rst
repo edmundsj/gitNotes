@@ -40,6 +40,13 @@ A:
 
     git fetch origin
 
+Q: Once I have fetched data from the server, how do I incorporate it into my local directory?
+A:
+
+.. code-block::
+
+    git merge origin/BRANCH_NAME LOCAL_BRANCH_NAME
+
 Q: How do I view not just the commits of the current branch, but a log of all my commits on all my branches?
 A:
 
@@ -54,3 +61,10 @@ A:
 
     git checkout master
     git merge hotfix
+
+Q: How do I delete a remote branch?
+A:
+
+.. code-block::
+
+    git push origin --delete BRANCH_NAME
