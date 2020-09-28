@@ -15,3 +15,5 @@ Branches can diverge - right now I'm making additional commits on the chapter3 b
 WOW - branching in git is as cheap as writing 41 bytes to a file - all a branch is storing is a pointer to a particular commit. That's so cheap.
 
 It looks like when you switch branches you can no longer see the commits of the other branch which is "ahead" of you. No reason to fear, just switch back to the other branch.
+
+Apparently when you try to merge from two branches with divergent history, git attempts to find the most recent common ancestor and do the merge automatically. It then creates a commit which represents that merge. If it isn't able to merge, it will ask you to fix conflicts and then create a merge commit manually. Once you perform that commit everything will be all good.
