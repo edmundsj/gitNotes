@@ -12,6 +12,7 @@ Welcome to Pro Git's documentation!
 
    helpful_commands
    notes_chapter2
+   notes_chapter3
 
 
 
