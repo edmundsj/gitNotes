@@ -40,4 +40,9 @@ A:
 
     git fetch origin
 
-Should do this. I'm not sure then how to merge stuff.
+Q: How do I view not just the commits of the current branch, but a log of all my commits on all my branches?
+A:
+
+.. code-block::
+
+    git log --all
