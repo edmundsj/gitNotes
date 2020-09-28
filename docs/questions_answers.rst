@@ -40,4 +40,17 @@ A:
 
     git fetch origin
 
-Should do this. I'm not sure then how to merge stuff.
+Q: How do I view not just the commits of the current branch, but a log of all my commits on all my branches?
+A:
+
+.. code-block::
+
+    git log --all
+
+Q: Suppose I switch to a hotfix branch, and do my work. How do I merge that work back into the master branch?
+A: 
+
+.. code-block::
+
+    git checkout master
+    git merge hotfix
