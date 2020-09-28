@@ -46,3 +46,11 @@ A:
 .. code-block::
 
     git log --all
+
+Q: Suppose I switch to a hotfix branch, and do my work. How do I merge that work back into the master branch?
+A: 
+
+.. code-block::
+
+    git checkout master
+    git merge hotfix

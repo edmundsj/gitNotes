@@ -13,3 +13,5 @@ I'm going to add a line of code so I can commit now.
 Branches can diverge - right now I'm making additional commits on the chapter3 branch, but I've also made some extra commits not seen by my testing branch on the master branch.
 
 WOW - branching in git is as cheap as writing 41 bytes to a file - all a branch is storing is a pointer to a particular commit. That's so cheap.
+
+It looks like when you switch branches you can no longer see the commits of the other branch which is "ahead" of you. No reason to fear, just switch back to the other branch.
