@@ -11,9 +11,7 @@ Welcome to Pro Git's documentation!
    :caption: Contents:
 
    helpful_commands
-   questions_answers
    notes_chapter2
-   notes_chapter3
 
 
 
